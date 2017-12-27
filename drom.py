@@ -11,7 +11,8 @@ def main():
     parser.add_argument('romname',
                         help='the ROM to be searched')
     parser.add_argument('-p', '--platform', metavar='',
-                        choices=['psx', 'ps2', 'nes', 'snes', 'n64', 'gc', 'wii'],
+                        choices=['psx', 'ps2', 'nes',
+                                 'snes', 'n64', 'gc', 'wii'],
                         help='add platform to the search query')
 
     args = parser.parse_args()
