@@ -12,8 +12,8 @@ def main():
     parser.add_argument('romname',
                         help='the ROM to be searched')
     parser.add_argument('-p', '--platform', metavar='',
-                        choices=['psx', 'ps2', 'nes',
-                                 'snes', 'n64', 'gc', 'wii'],
+                        choices=['psx', 'ps2', 'nes', 'snes',
+                                 'n64', 'gc', 'gba', 'wii'],
                         help='add platform to the search query')
 
     # How to use the lib "requests"
@@ -25,7 +25,7 @@ def main():
 
     args = parser.parse_args()
     if args.platform:
-        print 'ROM name: {} Platform: {}'.format(args.romname, args.platform)
+        print 'ROM name: {} Platform: {}'.format(args.romname, args.platform.upper())
         return
 
     print 'ROM name: {}'.format(args.romname)
