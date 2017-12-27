@@ -1,3 +1,4 @@
+#!/usr/bin/ python
 """Terminal application to download ROMs"""
 
 import argparse
